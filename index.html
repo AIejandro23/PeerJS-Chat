@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>PeerJS Chat</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col">
+             </div>
+            <div class="col text-center" style="margin-top:2%">
+                <h3>PeerJS Chat</h3>
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
+                            </div>
+                            <input id="idInput" type="text" placeholder="Write here the ID of receiver" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>                          
+                    <button id="connect" type="button" class="btn btn-primary">Connect</button>
+                    <p style="margin-top:2%" id=status></p>
+                    <p>My ID is: <span id="myId"></span></p>
+
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Message</span>
+                            </div>
+                            <input id="idMessage" type="text" placeholder="Write here the ID of receiver" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <button id="send" type="button" class="btn btn-primary">Send</button>
+                    <h4>Chat</h4>
+                    <p id="chat"></p>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
